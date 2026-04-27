@@ -1,0 +1,105 @@
+export const data = {
+  name: { first: "Jerlind", last: "Medina" },
+  role: "Frontend Developer",
+  stack: "React · WordPress · Tailwind",
+  email: "jerlind.eph.medina@gmail.com",
+  phone: "+63 927 480 1030",
+  location: "Cainta, Rizal, Philippines",
+  linkedin: "linkedin.com/in/jerlindmedina",
+  github: "github.com/jerlindmedina",
+  summary:
+    "6+ years building fast, accessible, and multilingual web experiences for global organizations across Asia Pacific.",
+  stats: [
+    { val: "6+", label: "Years experience" },
+    { val: "10+", label: "Markets delivered" },
+    { val: "3", label: "Global orgs" },
+  ],
+  skills: [
+    {
+      group: "Frontend",
+      items: [
+        "React",
+        "JavaScript ES6+",
+        "Tailwind CSS",
+        "HTML5",
+        "CSS3",
+        "jQuery",
+      ],
+    },
+    {
+      group: "CMS & Backend",
+      items: ["WordPress", "PHP", "SQL", "Elementor", "ACF", "WP-CLI"],
+    },
+    {
+      group: "DevOps & Tools",
+      items: ["AWS S3", "Docker", "Git", "XAMPP", "GoDaddy"],
+    },
+    {
+      group: "Optimization",
+      items: ["SEO", "Google Analytics", "Performance", "Responsive Design"],
+    },
+  ],
+  projects: [
+    {
+      num: "001",
+      name: "Maxwell Leadership Philippines",
+      desc: "Built and launched the company website end-to-end — custom WordPress theme, ACF, Elementor, SEO integration, and GoDaddy hosting. Solo developer ownership from zero to launch.",
+      impact: "Full site built from scratch, live and maintained",
+      tags: ["WordPress", "Elementor", "ACF", "SEO", "Google Analytics"],
+      image: "/images/maxwell-web.png",
+      url: "https://maxwellleadership.com.ph/",
+    },
+    {
+      num: "002",
+      name: "Our Daily Bread — Global Platform",
+      desc: "Led front-end of a multilingual devotional platform serving users across Asia Pacific. Solo PM and developer for full Chinese-language site redevelopments (Simplified + Traditional).",
+      impact: "100% performance improvement, 10+ markets served",
+      tags: ["React", "Tailwind CSS", "AWS S3", "i18n", "Docker", "PHP"],
+      image: "/images/odb-web.png",
+      url: "https://www.odbm.org/en/",
+      links: [
+        { label: "journeythrough.org", url: "https://journeythrough.org/" },
+        { label: "traditional-jts.org", url: "https://traditional-jts.org/" },
+        { label: "simplified-jts.org", url: "https://simplified-jts.org/" },
+        { label: "hikmat-keluarga.org", url: "https://hikmat-keluarga.org/" },
+        { label: "beranda-pendeta.org", url: "https://beranda-pendeta.org/" },
+        { label: "ya-mi.org/sc", url: "https://ya-mi.org/sc/" },
+        { label: "ya-mi.org/tc", url: "https://ya-mi.org/tc" },
+      ],
+    },
+    {
+      num: "003",
+      name: "CCF & FOCIG Ministry Sites",
+      desc: "WordPress development, event tracking, analytics, and layout redesign for two faith-based organizations. Streamlined CMS workflows enabling non-technical staff to manage content independently.",
+      impact: "Increased community engagement, CMS autonomy for staff",
+      tags: ["WordPress", "JavaScript", "CSS", "Analytics"],
+      image: "/images/ccf-web.jpg",
+    },
+  ],
+  experience: [
+    {
+      year: "2025 – present",
+      company: "Maxwell Leadership Philippines",
+      role: "Web Developer · Contract · Remote",
+      note: "Built company website from scratch. WordPress, Elementor, ACF, SEO, hosting.",
+    },
+    {
+      year: "2019 – 2025",
+      company: "Our Daily Bread Ministries Global",
+      role: "Software Engineer · Full-time",
+      note: "Led front-end of global React platform. Multilingual campaigns across 10+ Asia Pacific markets. SAFe® 6 Practitioner.",
+    },
+    {
+      year: "2023 – 2024",
+      company: "Christ's Commission Fellowship",
+      role: "Web Developer · Contract",
+      note: "WordPress, event tracking, analytics, layout redesign.",
+    },
+    {
+      year: "2023",
+      company: "FOCIG",
+      role: "Web Developer · Contract",
+      note: "WordPress, CMS workflow for non-technical staff.",
+    },
+  ],
+};

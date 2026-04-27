@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+/* Map design tokens to Tailwind utilities via @theme inline.
+   Using var() references keeps dark-mode overrides working automatically. */
+@theme inline {
+  --font-display: var(--f-display);
+  --font-mono: var(--f-mono);
+  --font-body: var(--f-body);
+
+  --color-bg: var(--bg);
+  --color-bg-card: var(--bg-card);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-green: var(--green);
+  --color-green-light: var(--green-light);
+  --color-border: var(--border);
+  --color-surface-inverse: var(--surface-inverse);
+  --color-on-inverse: var(--on-inverse);
+}
+
+:root {
+  --f-display: 'DM Serif Display', serif;
+  --f-mono: 'DM Mono', monospace;
+  --f-body: 'DM Sans', sans-serif;
+
+  --bg: #f7f5f0;
+  --bg-card: #ffffff;
+  --ink: #0e0e0e;
+  --ink-2: #555555;
+  --ink-3: #999999;
+  --accent: #1a1a2e;
+  --accent-light: #e8e6ff;
+  --green: #2d6a4f;
+  --green-light: #d8f3dc;
+  --border: rgba(0, 0, 0, 0.08);
+
+  /* contact card (inverted surface) */
+  --surface-inverse: #0e0e0e;
+  --on-inverse: rgba(247, 245, 240, 1);
+  --on-inverse-mid: rgba(247, 245, 240, 0.7);
+  --on-inverse-muted: rgba(247, 245, 240, 0.5);
+  --on-inverse-dim: rgba(247, 245, 240, 0.3);
+
+  /* nav backdrop */
+  --nav-bg-scrolled: rgba(247, 245, 240, 0.92);
+
+  /* project card hover */
+  --bg-card-hover: #faf9f6;
+}
+
+[data-theme="dark"] {
+  --bg: #111111;
+  --bg-card: #1c1c1c;
+  --ink: #f0ede8;
+  --ink-2: #aaaaaa;
+  --ink-3: #666666;
+  --accent: #a8a4ff;
+  --accent-light: #1e1e35;
+  --green: #52b788;
+  --green-light: rgba(82, 183, 136, 0.15);
+  --border: rgba(255, 255, 255, 0.08);
+
+  --surface-inverse: #f0ede8;
+  --on-inverse: rgba(14, 14, 14, 1);
+  --on-inverse-mid: rgba(14, 14, 14, 0.7);
+  --on-inverse-muted: rgba(14, 14, 14, 0.5);
+  --on-inverse-dim: rgba(14, 14, 14, 0.3);
+
+  --nav-bg-scrolled: rgba(17, 17, 17, 0.92);
+
+  /* project card hover */
+  --bg-card-hover: #242424;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--ink); -webkit-font-smoothing: antialiased; }
+a:hover { opacity: 0.75; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@media (max-width: 640px) {
+  nav { padding: 14px 20px !important; }
+  section { padding-left: 20px !important; padding-right: 20px !important; }
+  footer { padding: 16px 20px !important; }
+
+  .contact-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+  .contact-card { padding: 32px 24px !important; }
+  .project-card { padding: 20px !important; }
+}
