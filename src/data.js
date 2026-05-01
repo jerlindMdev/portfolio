@@ -5,8 +5,8 @@ export const data = {
   email: "jerlind.eph.medina@gmail.com",
   phone: "+63 927 480 1030",
   location: "Cainta, Rizal, Philippines",
-  linkedin: "linkedin.com/in/jerlindmedina",
-  github: "github.com/jerlindmedina",
+  linkedin: "www.linkedin.com/in/jerlindmedinadev",
+  github: "https://github.com/jerlindMdev",
   summary:
     "6+ years building fast, accessible, and multilingual web experiences for global organizations across Asia Pacific.",
   stats: [
